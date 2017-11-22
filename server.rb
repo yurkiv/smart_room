@@ -18,7 +18,8 @@ before { content_type :json }
 
 post '/init_rooms' do
   Ohm.flush
-  Room.create(name: 'Room 1', available: false)
+  Room.create(name: 'Room 1', available: true)
+  Room.create(name: 'Room 2', available: false)
   { status: :ok }.to_json
 end
 
