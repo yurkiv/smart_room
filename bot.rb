@@ -20,7 +20,7 @@ class RoomBot < SlackRubyBot::Bot
   end
 
   def self.room_status(room)
-    room.available ? 'available' : 'used'
+    room.available == 'true' ? 'available' : 'used'
   end
 end
 

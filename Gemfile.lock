@@ -44,6 +44,7 @@ GEM
     json (2.1.0)
     method_source (0.8.2)
     minitest (5.10.3)
+    mqtt (0.5.0)
     multipart-post (2.0.0)
     mustermann (1.0.1)
     nest (3.1.1)
@@ -98,10 +99,11 @@ DEPENDENCIES
   celluloid-io
   daemons
   dotenv
+  mqtt
   ohm
   pry
   sinatra
   slack-ruby-bot
 
 BUNDLED WITH
-   1.13.6
+   1.16.0
