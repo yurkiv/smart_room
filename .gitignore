@@ -48,3 +48,4 @@ bower.json
 /.idea/
 /app.yaml
 /bot.log
+*.pid

@@ -4,6 +4,7 @@ require 'ohm'
 require 'sentry-raven'
 require_relative 'room'
 
+Dir.chdir(File.dirname(__FILE__))
 Dotenv.load
 SlackRubyBot::Client.logger.level = Logger::INFO
 Raven.configure { |config| config.dsn = ENV['SENTRY_URL'] }
