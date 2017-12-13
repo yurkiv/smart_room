@@ -11,7 +11,7 @@ Raven.configure { |config| config.dsn = ENV['SENTRY_URL'] }
 Ohm.redis = Redic.new(ENV['REDIS_URL'])
 
 Ohm.flush
-Room.create(name: 'Big meeting room', available: true)
+Room.create(name: 'Middle meeting room', available: true)
 # Room.create(name: 'Room 2', available: false)
 
 MQTT::Client.connect(ENV['MQTT_URL']) do |client|
